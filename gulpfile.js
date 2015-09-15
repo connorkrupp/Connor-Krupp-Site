@@ -69,7 +69,7 @@ gulp.task('watch', function() {
 
 gulp.task('browser-sync', function() {
     browsersync.init({
-        proxy: "localhost/DB_NAME"
+        proxy: "127.0.0.1/connor"
     });
 });
 
