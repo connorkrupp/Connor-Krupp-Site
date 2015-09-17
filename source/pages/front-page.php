@@ -1,33 +1,47 @@
 <?php get_header(); ?>
 
-  <div id="content">
-    <div id="inner-content" class="wrap cf">
-      <main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+  <div id="content" class="home">
+    <div id="inner-content" class="cf">
+      <main id="main" class="m-all t-all d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-          
-          <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-            
-            <header class="article-header">
-              <h1 class="page-title"><?php the_title(); ?></h1>
-            </header>
 
-            <section class="entry-content cf" itemprop="articleBody">
-              <?php
-                the_content();
-                wp_link_pages( array(
-                  'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'bonestheme' ) . '</span>',
-                  'after'       => '</div>',
-                  'link_before' => '<span>',
-                  'link_after'  => '</span>',
-                ) );
-              ?>
-            </section>
+          <div class="hero">
+            <div class="hero-content-wrap wrap">
+              <h2>Connor Krupp</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
 
-            <footer class="article-footer">
-              <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
-            </footer>
+          <div class="title-desc cf">
+            <div class="wrap">
+              <div class="title-desc-content">
+                <h2>Passionate about everything<br /> <strong>Computer Science</strong></h2>
+                <div class="section-underline"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="title-desc-image"></div>
+            </div>
+          </div>
 
-          </article>
+          <div class="skills-section">
+            <div class="wrap cf">
+              <div class="skill-content">
+                <div class="skill-image"></div>
+                <h2>Title One</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eligendi labore, fugit eius ipsum delectus ut quasi repellat quibusdam, laudantium nihil perferendis aspernatur quia! Voluptas numquam voluptatem laborum, natus velit!</p>
+              </div>
+              <div class="skill-content">
+                <div class="skill-image"></div>
+                <h2>Title One</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eligendi labore, fugit eius ipsum delectus ut quasi repellat quibusdam, laudantium nihil perferendis aspernatur quia! Voluptas numquam voluptatem laborum, natus velit!</p>
+              </div>
+              <div class="skill-content">
+                <div class="skill-image"></div>
+                <h2>Title One</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eligendi labore, fugit eius ipsum delectus ut quasi repellat quibusdam, laudantium nihil perferendis aspernatur quia! Voluptas numquam voluptatem laborum, natus velit!</p>
+              </div>
+            </div>
+          </div>
 
         <?php endwhile; else : ?>
 
@@ -46,8 +60,7 @@
         <?php endif; ?>
 
       </main>
-      <?php get_sidebar(); ?>
     </div>
   </div>
-  
+
 <?php get_footer(); ?>

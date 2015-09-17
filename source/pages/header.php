@@ -42,10 +42,9 @@
   <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
     <div id="container">
 
-      <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+      <header class="header wrap" role="banner" itemscope itemtype="http://schema.org/WPHeader">
         <div id="inner-header" class="wrap cf">
           <?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-          <p id="logo" class="logo h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
 
           <nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
             <?php wp_nav_menu(array(
