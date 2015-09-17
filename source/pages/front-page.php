@@ -9,6 +9,11 @@
             <div class="hero-content-wrap wrap">
               <h2>Connor Krupp</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <div class="social-link-wrap">
+                <div class="social-link"></div>
+                <div class="social-link middle"></div>
+                <div class="social-link"></div>
+              </div>
             </div>
           </div>
 
@@ -40,6 +45,15 @@
                 <h2>Title One</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eligendi labore, fugit eius ipsum delectus ut quasi repellat quibusdam, laudantium nihil perferendis aspernatur quia! Voluptas numquam voluptatem laborum, natus velit!</p>
               </div>
+            </div>
+          </div>
+
+          <div class="resume-cta">
+            <div class="wrap cf">
+              <h2>Lorem ipsum dolor sit amet</h2>
+              <div class="section-underline"></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+              <button>View Portfolio</button>
             </div>
           </div>
 
