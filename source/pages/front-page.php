@@ -37,12 +37,12 @@
               </div>
               <div class="skill-content">
                 <div class="skill-image"></div>
-                <h2>Title One</h2>
+                <h2>Title Two</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eligendi labore, fugit eius ipsum delectus ut quasi repellat quibusdam, laudantium nihil perferendis aspernatur quia! Voluptas numquam voluptatem laborum, natus velit!</p>
               </div>
               <div class="skill-content">
                 <div class="skill-image"></div>
-                <h2>Title One</h2>
+                <h2>Title Three</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eligendi labore, fugit eius ipsum delectus ut quasi repellat quibusdam, laudantium nihil perferendis aspernatur quia! Voluptas numquam voluptatem laborum, natus velit!</p>
               </div>
             </div>
