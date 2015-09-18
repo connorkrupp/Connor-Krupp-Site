@@ -1,5 +1,4 @@
 /*! Made with Bones: http://themble.com/bones :) */
-
 /******************************************************************
 Site Name:
 Author:
@@ -15,14 +14,12 @@ Helpful articles on Sass file organization:
 http://thesassway.com/advanced/modular-css-naming-conventions
 
 ******************************************************************/
-
 /*********************
 IMPORTING PARTIALS
 These files are needed at the beginning so that we establish all
 our mixins, functions, and variables that we'll be using across
 the whole project.
 *********************/
-
 // normalize: http://necolas.github.io/normalize.css/
 @import "partials/normalize";
 
@@ -48,7 +45,6 @@ We can break them up as much as we want or just keep them all in one.
 I mean, you can do whatever you want. The world is your oyster. Unless
 you hate oysters, then the world is your peanut butter & jelly sandwich.
 *********************/
-
 // alert boxes
 @import "modules/alerts";
 
@@ -61,12 +57,10 @@ you hate oysters, then the world is your peanut butter & jelly sandwich.
 /*********************
 BASE STYLES
 *********************/
-
 // styles in base.scss
 @import "components/base";
 @import "components/header";
 @import "components/footer";
-
 @import "components/front-page";
 
 /*********************
@@ -77,7 +71,6 @@ be set to display none.
 *********************/
 @media print {
 
-	// styles in print.scss
-	@import "partials/print";
-
+  // styles in print.scss
+  @import "partials/print";
 }

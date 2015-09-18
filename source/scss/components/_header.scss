@@ -4,23 +4,19 @@ Author: Connor Krupp
 
 Stylesheet: Header Stylesheet
 ******************************************************************/
-
 .header {
   background-color: clear;
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
-
   #logo {
     float: left;
     margin: 0;
-
     a {
       color: $white;
     }
   }
-
   nav {
     border: 0;
     overflow: hidden;
@@ -30,15 +26,13 @@ Stylesheet: Header Stylesheet
       display: inline;
       float: none;
     }
-
     li {
       display: inline-block;
       position: relative;
-
       &.center-link a {
+
         //font-size: 24px;
       }
-
       a {
         border-bottom: 0;
         text-align: center;
@@ -48,14 +42,18 @@ Stylesheet: Header Stylesheet
         you can use hover styles here even though this size
         has the possibility of being a mobile device.
         */
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           color: $white;
           text-decoration: underline;
         }
       }
+      &:first-child {
 
-      &:first-child {}
-      &:last-child {}
+      }
+      &:last-child {
+
+      }
 
       /*
       plan your menus and drop-downs wisely.
@@ -68,27 +66,24 @@ Stylesheet: Header Stylesheet
         position: absolute;
         visibility: hidden;
         z-index: 8999;
-
-        li {
-
-          a {
+        li {a {
             padding-left: 10px;
             border-right: 0;
             display: block;
             width: 180px;
             border-bottom: 1px solid #ccc;
-
             &:hover,
-            &:focus {}
+            &:focus {
 
-            &:link {}
+            }
+            &:link {
+
+            }
           }
+          &:first-child {
 
-          &:first-child {}
-
-          &:last-child {
-
-            a {
+          }
+          &:last-child {a {
               border-bottom: 0;
             }
           }
@@ -99,33 +94,35 @@ Stylesheet: Header Stylesheet
           for usability. k, bai.
           */
           ul {
-            top:0;
-            left:100%;
+            top: 0;
+            left: 100%;
           }
         }
 
         /* highlight sub-menu current page */
         li.current-menu-item,
         li.current_page_item,
-        li.current_page_ancestor {
-          a {}
+        li.current_page_ancestor {a {
+
+          }
         }
       }
 
       /* showing sub-menus */
       &:hover > ul {
         top: auto;
-        visibility:visible;
+        visibility: visible;
       }
-
-    } /* end .menu ul li */
-
+    }
+    /* end .menu ul li */
     /* highlight current page */
     li.current-menu-item,
     li.current_page_item,
-    li.current_page_ancestor {
-      a {}
-    }  /* end current highlighters */
+    li.current_page_ancestor {a {
 
-  } /* end .nav */
+      }
+    }
+    /* end current highlighters */
+  }
+  /* end .nav */
 }

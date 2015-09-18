@@ -15,8 +15,6 @@ For more info on functions, go here:
 http://sass-lang.com/documentation/Sass/Script/Functions.html
 
 ******************************************************************/
-
-
 /*********************
 COLOR FUNCTIONS
 These are helpful when you're working
@@ -28,17 +26,15 @@ box-shadow: 0 0 4px black(0.3);
 compiles to:
 box-shadow: 0 0 4px rgba(0,0,0,0.3);
 *********************/
-
 // black
 @function black($opacity) {
-    @return rgba(0,0,0,$opacity);
+  @return rgba(0,0,0,$opacity);
 }
 
 // white
 @function white($opacity) {
-    @return rgba(255,255,255,$opacity);
+  @return rgba(255,255,255,$opacity);
 }
-
 
 /*********************
 RESPONSIVE HELPER FUNCTION
@@ -57,7 +53,6 @@ width: calc-percent(650px, 1000px);
 both compile to:
 width: 65%;
 *********************/
-
 @function calc-percent($target, $container) {
   @return ($target / $container) * 100%;
 }
