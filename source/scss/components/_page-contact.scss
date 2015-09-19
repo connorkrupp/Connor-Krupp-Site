@@ -15,12 +15,15 @@
       left: -50%;
       background-image: linear-gradient(-45deg, #4fa49a 15%, #427bbf 50%, #2e147a);
       width: 150%;
-      height: 145%;
+      height: 135%;
       transform: skewY(2.8deg);
       z-index: -1;
     }
     .hero-content-wrap {
       padding: 100px 0;
+      @media (max-width: 768px) {
+        padding-top: 0;
+      }
     }
     .social-link-wrap {
       margin: 0 auto;

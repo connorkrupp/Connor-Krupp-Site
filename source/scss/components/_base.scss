@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: Connor Krupp's Website
+Author: Connor Krupp
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -23,6 +23,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#wprmenu_bar {
+  background: transparent;
+  width: 40%;
+  right: 0;
+  left: initial;
+}
+
+body #wprmenu_menu {
+  background: $black !important;
+  border: none;
+  top: 0 !important;
+  #wprmenu_menu_ul{
+    li {
+      border: none;
+    }
+    border: none !important;
+  }
+}
 /********************
 WORDPRESS BODY CLASSES
 style a page via class

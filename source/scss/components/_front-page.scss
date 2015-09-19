@@ -17,12 +17,16 @@ Stylesheet: Front Page Stylesheet
       left: -50%;
       background-image: linear-gradient(-45deg, #4fa49a 15%, #427bbf 50%, #2e147a);
       width: 150%;
-      height: 145%;
+      height: 140%;
       transform: skewY(2.8deg);
       z-index: -1;
     }
     .hero-content-wrap {
       padding: 100px 0;
+
+      @media (max-width: 768px) {
+        padding-top: 0;
+      }
     }
     .social-link-wrap {
       margin: 0 auto;
@@ -78,6 +82,16 @@ Stylesheet: Front Page Stylesheet
       width: 45%;
       height: 230px;
     }
+    @media (max-width: 600px) {
+      padding-top: 0;
+      padding-bottom: 30px;
+      .title-desc-content {
+        width: 100%;
+      }
+      .title-desc-image {
+        display: none;
+      }
+    }
   }
   .section-underline {
     background-color: $text-color;
@@ -105,6 +119,15 @@ Stylesheet: Front Page Stylesheet
       }
       h2 {
         margin: 10px auto;
+      }
+    }
+
+    @media (max-width: 600px) {
+      padding: 50px 0 0 0;
+
+      .skill-content {
+        width: 100%;
+        margin-bottom: 40px;
       }
     }
   }

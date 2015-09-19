@@ -25,6 +25,9 @@
     }
     .hero-content-wrap {
       padding: 100px 0;
+      @media (max-width: 768px) {
+        padding-top: 0;
+      }
     }
     .social-link-wrap {
       margin: 0 auto;

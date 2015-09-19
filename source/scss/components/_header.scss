@@ -11,6 +11,10 @@ Stylesheet: Header Stylesheet
   right: 0;
   margin: auto;
   z-index: 2;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
   #logo {
     float: left;
     margin: 0;
