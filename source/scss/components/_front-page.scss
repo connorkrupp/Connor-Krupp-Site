@@ -4,21 +4,22 @@ Author: Connor Krupp
 
 Stylesheet: Front Page Stylesheet
 ******************************************************************/
-.home {.hero {
-
-    //background-image: linear-gradient(-45deg, #4fa49a 15%, #427bbf 50%, #2e147a);
+.home {
+  .hero {
     position: relative;
     margin-bottom: 30px;
+
+    //background-image: linear-gradient(-45deg, #4fa49a 15%, #427bbf 50%, #2e147a);
     &:after {
       content: " ";
       position: absolute;
-      width: 150%;
-      height: 145%;
       top: -50%;
       left: -50%;
-      z-index: -1;
       background-image: linear-gradient(-45deg, #4fa49a 15%, #427bbf 50%, #2e147a);
+      width: 150%;
+      height: 145%;
       transform: skewY(2.8deg);
+      z-index: -1;
     }
     .hero-content-wrap {
       padding: 100px 0;
@@ -29,29 +30,29 @@ Stylesheet: Front Page Stylesheet
       text-align: center;
     }
     .social-link {
-      width: 76px;
-      height: 76px;
+      display: inline-block;
       background-color: $black;
       margin: 0 auto;
-      display: inline-block;
       border-radius: 38px;
+      width: 76px;
+      height: 76px;
       &.middle {
         margin: 0 20px;
       }
     }
     h2,
     p {
-      text-align: center;
       color: $white;
+      margin: 0 auto;
+      text-align: center;
       width: 80%;
       max-width: 520px;
-      margin: 0 auto;
     }
     h2 {
       font-size: 34px;
       font-weight: bold;
-      text-transform: uppercase;
       margin-bottom: 20px;
+      text-transform: uppercase;
     }
     p {
       font-size: 18px;
@@ -72,35 +73,35 @@ Stylesheet: Front Page Stylesheet
       }
     }
     .title-desc-image {
-      width: 45%;
-      height: 230px;
       background-color: $black;
       float: right;
+      width: 45%;
+      height: 230px;
     }
   }
   .section-underline {
-    height: 3px;
-    width: 100px;
     background-color: $text-color;
+    width: 100px;
+    height: 3px;
   }
   .skills-section {
-    padding: 100px 0;
     background-color: $white;
+    padding: 100px 0;
     .skill-content {
       float: left;
       width: 33%;
       .skill-image {
-        background-color: $black;
-        width: 90%;
         display: block;
+        background-color: $black;
         margin: 0 auto;
+        width: 90%;
         height: 200px;
       }
       h2,
       p {
+        margin: 0 auto;
         text-align: center;
         width: 75%;
-        margin: 0 auto;
       }
       h2 {
         margin: 10px auto;
@@ -108,27 +109,15 @@ Stylesheet: Front Page Stylesheet
     }
   }
   .resume-cta {
-    text-align: center;
     padding: 30px 0;
+    text-align: center;
     .section-underline {
       margin: 0 auto;
     }
     p {
+      margin: 20px auto;
       width: 80%;
       max-width: 600px;
-      margin: 20px auto;
-    }
-    button {
-      border-color: $text-color;
-      border-right-color: $text-color;
-      color: $text-color;
-      border-width: 2px;
-      border-radius: 5px;
-      padding: 10px 20px;
-      font-size: 16px;
-      text-transform: uppercase;
-      background-color: transparent;
-      margin-bottom: 35px;
     }
   }
 }

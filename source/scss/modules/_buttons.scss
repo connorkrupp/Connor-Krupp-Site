@@ -76,5 +76,14 @@ and it will create a button dependant on those variables.
 
   // end active
 }
+.button-hollow {
+  @extend %button-template;
+  font-size: 18px;
+  background-color: transparent;
+  color: $text-color;
+  padding: 3px 30px;
+  border: 2px solid $text-color;
+  text-transform: uppercase;
+}
 
 // end blue button

@@ -53,7 +53,7 @@
               <h2>Lorem ipsum dolor sit amet</h2>
               <div class="section-underline"></div>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-              <button>View Portfolio</button>
+              <button class="button-hollow">View Resume</button>
             </div>
           </div>
 

@@ -27,7 +27,8 @@ gulp.task('jshint', function () {
     .pipe(reload({stream: true, once: true}))
     .pipe($.jshint())
     .pipe($.jshint.reporter('jshint-stylish'))
-    .pipe($.if(!browserSync.active, $.jshint.reporter('fail')));
+    .pipe($.if(!browserSync.active, $.jshint.reporter('fail')))
+    .pipe(gulp.dest('app/library/js/'));
 });
 
 // Optimize images
@@ -99,6 +100,4 @@ gulp.task('serve', ['build', 'styles'], function () {
 });
 
 // Build production files, the default task
-gulp.task('default', ['clean'], function (cb) {
-  runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy'], cb);
-});
+gulp.task('default', ['build', 'serve', 'jshint']);

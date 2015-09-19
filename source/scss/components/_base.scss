@@ -171,11 +171,9 @@ style a page via class
 LAYOUT & GRID STYLES
 *********************/
 .wrap {
-  width: 960px;
+  max-width: 1040px;
   margin: 0 auto;
-  @media (max-width: 1000px) {
-    width: 90%;
-  }
+  width: 90%;
 }
 
 /*********************

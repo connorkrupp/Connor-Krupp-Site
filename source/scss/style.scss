@@ -1,7 +1,7 @@
 /*! Made with Bones: http://themble.com/bones :) */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Connor Krupp
+Author: Connor Krupp
 
 Stylesheet: Main Stylesheet
 
@@ -62,6 +62,9 @@ BASE STYLES
 @import "components/header";
 @import "components/footer";
 @import "components/front-page";
+@import "components/page-blog";
+@import "components/page-contact";
+@import "components/page-portfolio";
 
 /*********************
 PRINT STYLESHEET
