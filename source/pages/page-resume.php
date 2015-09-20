@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: Contact Page
+ Template Name: Resume Page
  *
  * This is your custom page template. You can create as many of these as you need.
  * Simply name is "page-whatever.php" and in add the "Template Name" title at the
@@ -15,17 +15,17 @@
 
 <?php get_header(); ?>
 
-  <div id="content" class="page-contact">
+  <div id="content" class="page-resume">
     <div id="inner-content" class="cf">
       <main id="main" class="m-all t-all d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
           <div class="hero">
-            <div class="hero-content-wrap contact-wrap">
-              <h2>Want to talk?</h2>
+            <div class="hero-content-wrap wrap">
+              <h2>Check out my resume</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
           </div>
-          <section class="entry-content cf wrap contact-form" itemprop="articleBody">
+          <section class="entry-content cf wrap" itemprop="articleBody">
             <?php
               the_content();
               wp_link_pages(array(
