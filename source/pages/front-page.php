@@ -10,8 +10,8 @@
               <h2>Connor Krupp</h2>
               <p>College student, iOS and web developer, and has an unhealthy obsession with the programming language Swift.</p>
               <div class="social-link-wrap">
-                <a href="http://localhost:3000/connor/contact"><span class="social-link one"></span></a>
-                <a href="#"><span class="social-link two"></span></a>
+                <a href="https://www.linkedin.com/in/connorkrupp"><span class="social-link one"></span></a>
+                <a href="https://github.com/connorkrupp"><span class="social-link two"></span></a>
                 <a href="http://localhost:3000/connor/contact"><span class="social-link three"></span></a>
               </div>
             </div>

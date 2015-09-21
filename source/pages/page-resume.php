@@ -23,7 +23,7 @@
             <div class="hero-content-wrap wrap">
               <h2>Check out my resume</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              <button class="button-hollow">View PDF</button>
+              <a href="http://127.0.0.1/connor/wp-content/uploads/2015/09/ConnorKruppResume.pdf"><button class="button-hollow">View PDF</button></a>
             </div>
           </div>
           <section class="entry-content cf wrap" itemprop="articleBody">
