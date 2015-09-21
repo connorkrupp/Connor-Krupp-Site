@@ -74,6 +74,7 @@ if (!isset($content_width)) {
 // Thumbnail sizes
 add_image_size('bones-thumb-600', 600, 150, true);
 add_image_size('bones-thumb-300', 300, 100, true);
+add_image_size('bones-thumb-250', 250, 160, true);
 
 /*
 to add more sizes, simply copy a line from above
@@ -252,7 +253,7 @@ and be up and running in seconds.
 */
 function bones_fonts()
 {
-    wp_enqueue_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
+    wp_enqueue_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,900');
 }
 
 add_action('wp_enqueue_scripts', 'bones_fonts');

@@ -9,7 +9,6 @@ Stylesheet: Front Page Stylesheet
     position: relative;
     margin-bottom: 30px;
 
-    //background-image: linear-gradient(-45deg, #4fa49a 15%, #427bbf 50%, #2e147a);
     &:after {
       content: " ";
       position: absolute;
@@ -33,6 +32,13 @@ Stylesheet: Front Page Stylesheet
       margin-top: 20px;
       text-align: center;
     }
+    a {
+      &:hover {
+        .social-link {
+          transform: translateY(6px);
+        }
+      }
+    }
     .social-link {
       display: inline-block;
       background-color: $black;
@@ -40,8 +46,18 @@ Stylesheet: Front Page Stylesheet
       border-radius: 38px;
       width: 76px;
       height: 76px;
-      &.middle {
+      &.one {
+        background: url('images/linkedin-icon.png');
+        background-size: cover;
+      }
+      &.two {
         margin: 0 20px;
+        background: url('images/github-icon.png');
+        background-size: cover;
+      }
+      &.three {
+        background: url('images/email-icon.png');
+        background-size: cover;
       }
     }
     h2,
@@ -55,7 +71,7 @@ Stylesheet: Front Page Stylesheet
     h2 {
       font-size: 34px;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       text-transform: uppercase;
     }
     p {
@@ -64,8 +80,8 @@ Stylesheet: Front Page Stylesheet
     }
   }
   .title-desc {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 80px;
     .title-desc-content {
       float: left;
       width: 45%;
@@ -76,20 +92,12 @@ Stylesheet: Front Page Stylesheet
         font-size: 18px;
       }
     }
-    .title-desc-image {
-      background-color: $black;
-      float: right;
-      width: 45%;
-      height: 230px;
-    }
+
     @media (max-width: 600px) {
       padding-top: 0;
       padding-bottom: 30px;
       .title-desc-content {
         width: 100%;
-      }
-      .title-desc-image {
-        display: none;
       }
     }
   }
@@ -100,25 +108,45 @@ Stylesheet: Front Page Stylesheet
   }
   .skills-section {
     background-color: $white;
-    padding: 100px 0;
+    padding: 70px 0;
     .skill-content {
       float: left;
       width: 33%;
       .skill-image {
         display: block;
-        background-color: $black;
         margin: 0 auto;
-        width: 90%;
-        height: 200px;
+
+        &.one {
+          background: url('images/wordpress-logo.png');
+          background-size: cover;
+          width: 140px;
+          height: 140px;
+        }
+        &.two {
+          background: url('images/apple-logo.png');
+          background-size: cover;
+          width: 113px;
+          height: 140px;
+        }
+        &.three {
+          background: url('images/uofm-logo.png');
+          background-size: cover;
+          width: 132px;
+          height: 140px;
+        }
       }
       h2,
       p {
         margin: 0 auto;
         text-align: center;
-        width: 75%;
       }
       h2 {
-        margin: 10px auto;
+        margin: 15px auto;
+        width: 90%;
+      }
+
+      p {
+        width: 70%;
       }
     }
 
@@ -132,7 +160,7 @@ Stylesheet: Front Page Stylesheet
     }
   }
   .resume-cta {
-    padding: 30px 0;
+    padding-bottom: 30px;
     text-align: center;
     .section-underline {
       margin: 0 auto;

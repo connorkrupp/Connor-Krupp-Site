@@ -1,7 +1,7 @@
 .page-resume {
   .hero {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: -10px;
 
     //background-image: linear-gradient(-45deg, #4fa49a 15%, #427bbf 50%, #2e147a);
     &:after {
@@ -16,7 +16,7 @@
       z-index: -1;
     }
     .hero-content-wrap {
-      padding: 120px 0 100px 0;
+      padding: 120px 0 80px 0;
       @media (max-width: 768px) {
         padding-top: 0;
       }
@@ -48,12 +48,65 @@
     h2 {
       font-size: 34px;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       text-transform: uppercase;
     }
     p {
       font-size: 18px;
       margin-bottom: 25px;
     }
+
+    .button-hollow {
+      margin-top: 20px;
+      color: $white;
+      border-color: $white;
+    }
   }
+
+  .section-title {
+    font-weight: 400;
+    margin: 12px 0 5px 0;
+    font-size: 22px;
+  }
+
+  .subtitle-right {
+    float: right;
+
+    @media (max-width: 610px) {
+      display: none;
+    }
+  }
+
+  .activities-section .subtitle-right {
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  .subtitle {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 5px 0;
+  }
+
+  ul {
+    margin-top: 7px;
+    margin-bottom: 12px;
+    list-style-type: disc;
+    li {
+      margin: 2px 0;
+      margin-left: 20px;
+    }
+  }
+
+  .entry-content p {
+    margin-bottom: .65em;
+  }
+
+  .entry-content {
+    padding-top: 0;
+    margin-bottom: 30px;
+  }
+
 }

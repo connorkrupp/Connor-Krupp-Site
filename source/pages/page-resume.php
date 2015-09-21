@@ -23,6 +23,7 @@
             <div class="hero-content-wrap wrap">
               <h2>Check out my resume</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <button class="button-hollow">View PDF</button>
             </div>
           </div>
           <section class="entry-content cf wrap" itemprop="articleBody">

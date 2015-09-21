@@ -15,24 +15,25 @@
         <?php $currentPost = 0; ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
           <article id="post-<?php echo $currentPost % 2; $currentPost++;?>" <?php post_class('project cf'); ?> role="article">
+            <?php $post_fields = get_post_custom(); ?>
+
             <div class="project-content">
-              <h3 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-              <div class="project-thumbnail"></div>
+              <h3 class="h2 entry-title"><?php the_title(); ?></h3>
+              <div class="project-thumbnail"><?php the_post_thumbnail('bones-thumb-250'); ?></div>
               <div class="project-info">
                 <div class="subtitle">
                   <h6>Platform</h6>
-                  <p>iOS</p>
+                  <p><?php echo get_post_meta( get_the_ID(), Platform, true); ?></p>
                 </div>
                 <div class="subtitle">
                   <h6>Date</h6>
-                  <p><?php printf(__('', 'bonestheme').' %1$s %2$s','<time class="updated entry-time" datetime="'.get_the_time('Y-m-d').'" itemprop="datePublished">'.get_the_time(get_option('date_format')).'</time>',''); ?></p>
+                  <p><?php echo get_post_meta( get_the_ID(), Date, true); ?></p>
                 </div>
                 <div class="subtitle">
                   <h6>Client</h6>
-                  <p>Napp Development</p>
+                  <p><?php echo get_post_meta( get_the_ID(), Client, true); ?></p>
                 </div>
               </div>
-              <?php //the_post_thumbnail('bones-thumb-300'); ?>
               <div class="project-excerpt">
                 <?php the_excerpt(); ?>
               </div>
