@@ -10,7 +10,6 @@
 							<div class="hero">
 		            <div class="hero-content-wrap contact-wrap">
 		              <h2><?php the_title(); ?></h2>
-		              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 		            </div>
 		          </div>
 
