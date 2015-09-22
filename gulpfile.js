@@ -27,7 +27,6 @@ gulp.task('jshint', function () {
     .pipe(reload({stream: true, once: true}))
     .pipe($.jshint())
     .pipe($.jshint.reporter('jshint-stylish'))
-    .pipe($.if(!browserSync.active, $.jshint.reporter('fail')))
     .pipe(gulp.dest('app/library/js/'));
 });
 
@@ -38,7 +37,7 @@ gulp.task('images', function () {
       progressive: true,
       interlaced: true
     })))
-    .pipe(gulp.dest('app/library/images/'))
+    .pipe(gulp.dest('app/library/css/images/'))
     .pipe($.size({title: 'images'}));
 });
 

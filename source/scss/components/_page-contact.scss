@@ -89,6 +89,11 @@
       margin: 20px auto;
       float: none;
       display: block;
+
+      &:hover {
+        background-color: $text-color;
+        color: $white;
+      }
     }
   }
 }

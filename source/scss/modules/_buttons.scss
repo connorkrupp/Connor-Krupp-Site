@@ -84,6 +84,10 @@ and it will create a button dependant on those variables.
   padding: 3px 30px;
   border: 2px solid $text-color;
   text-transform: uppercase;
+  &:hover {
+    background-color: $text-color;
+    color: $white;
+  }
 }
 
 // end blue button

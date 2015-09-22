@@ -37,7 +37,16 @@
               ));
             ?>
           </section>
-
+          <div class="footer-hero">
+            <div class="footer-hero-content-wrap wrap">
+              <h2>Would you like to see more?</h2>
+              <p>You can check out my LinkedIn, it has plenty of extras! Or, maybe you want a PDF version of my resume?</p>
+              <div class="button-wrap">
+                <a href="http://127.0.0.1/connor/wp-content/uploads/2015/09/ConnorKruppResume.pdf"><button class="button-hollow first">View PDF</button></a>
+                <a href="https://linkedin.com/in/connorkrupp"><button class="button-hollow">LinkedIn</button></a>
+              </div>
+            </div>
+          </div>
 
           </article>
 

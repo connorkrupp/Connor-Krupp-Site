@@ -60,6 +60,11 @@
       margin-top: 20px;
       color: $white;
       border-color: $white;
+      &:hover {
+        background-color: $text-color;
+        color: $white;
+        border-color: $text-color;
+      }
     }
   }
 
@@ -107,6 +112,31 @@
   .entry-content {
     padding-top: 0;
     margin-bottom: 30px;
+  }
+
+  .footer-hero {
+    background-color: $white;
+    padding: 40px 0;
+    .wrap {
+      max-width: 600px;
+    }
+    h2,
+    p {
+      text-align: center;
+    }
+    .button-wrap {
+      text-align: center;
+      button {
+        &.first {
+          margin-right: 20px;
+
+          @media (max-width: 350px) {
+            margin-right: 0;
+          }
+        }
+        margin-bottom: 20px;
+      }
+    }
   }
 
 }
