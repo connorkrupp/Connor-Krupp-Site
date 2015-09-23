@@ -23,7 +23,7 @@
             <div class="hero-content-wrap wrap">
               <h2>Check out my resume</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              <a href="http://127.0.0.1/connor/wp-content/uploads/2015/09/ConnorKruppResume.pdf"><button class="button-hollow">View PDF</button></a>
+              <a href="http://connorkrupp.com/wp-content/uploads/2015/09/ConnorKruppResume.pdf"><button class="button-hollow">View PDF</button></a>
             </div>
           </div>
           <section class="entry-content cf wrap" itemprop="articleBody">
@@ -42,7 +42,7 @@
               <h2>Would you like to see more?</h2>
               <p>You can check out my LinkedIn, it has plenty of extras! Or, maybe you want a PDF version of my resume?</p>
               <div class="button-wrap">
-                <a href="http://127.0.0.1/connor/wp-content/uploads/2015/09/ConnorKruppResume.pdf"><button class="button-hollow first">View PDF</button></a>
+                <a href="http://connorkrupp.com/wp-content/uploads/2015/09/ConnorKruppResume.pdf"><button class="button-hollow first">View PDF</button></a>
                 <a href="https://linkedin.com/in/connorkrupp"><button class="button-hollow">LinkedIn</button></a>
               </div>
             </div>

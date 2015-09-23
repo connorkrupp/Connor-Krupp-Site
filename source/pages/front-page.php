@@ -12,7 +12,7 @@
               <div class="social-link-wrap">
                 <a href="https://www.linkedin.com/in/connorkrupp"><span class="social-link one"></span></a>
                 <a href="https://github.com/connorkrupp"><span class="social-link two"></span></a>
-                <a href="http://localhost:3000/connor/contact"><span class="social-link three"></span></a>
+                <a href="http://connorkrupp.com/contact"><span class="social-link three"></span></a>
               </div>
             </div>
           </div>
